@@ -15,7 +15,6 @@
 ## Benefits Over Traditional Systems
 
 - **No Recurring Costs**: Unlike systems like LifeAlert, which charge monthly fees, CareConnect provides a subscription-free experience.
-- **Full Control**: CareConnect is open-source, giving users the freedom to modify and customize the device and software to fit their specific needs.
 - **Simplified Connectivity**: By using existing Wi-Fi networks, it bypasses the need for cellular connectivity, reducing complexity and potential outages.
 
 ## Components
@@ -56,7 +55,7 @@ To build CareConnect, you'll need the following components:
 
 ## License
 
-This project is open-source and licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
