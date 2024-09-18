@@ -20,9 +20,9 @@
 ## Components
 
 To build CareConnect, you'll need the following components:
-- **Adafruit QT Py ESP32-S3 WiFi Dev Board** - [Link](https://www.adafruit.com/product/5540)
-- **Adafruit Ultra Slim Lithium Polymer Battery - 150mAh** or equivalent - [Link](https://www.adafruit.com/product/1317)
-- **Adafruit Massive Arcade Button (28mm)** or equivalent - [Link](https://www.adafruit.com/product/1185)
+- **Adafruit QT Py ESP32-S3 WiFi Dev Board** - [Link](https://www.adafruit.com/product/5426)
+- **Battery TBD**
+- **Button: TBD**
 - **3D Printed Enclosure** - Design files will eventually be available in this repo.
 
 ## How It Works
