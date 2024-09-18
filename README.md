@@ -55,7 +55,7 @@ To build CareConnect, you'll need the following components:
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Licensed under the MIT License.
 
 ---
 
