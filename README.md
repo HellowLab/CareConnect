@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# CareConnect
 
-## Get started
+**CareConnect** is a compact, wearable emergency alert device designed to keep you connected to help, without the need for costly subscriptions or complex third-party services. It's a sleek, user-friendly solution that empowers individuals to maintain their independence while ensuring their loved ones can provide timely assistance when needed.
 
-1. Install dependencies
+## Key Features
 
+- **No Subscription Fees**: Unlike traditional systems like LifeAlert, CareConnect requires no monthly fees or subscription services. It connects directly via Wi-Fi to notify caregivers through a mobile or web app.
+- **Compact Design**: About the size of a half-dollar, CareConnect is comfortable to wear around the neck, with a prominent, easy-to-press button similar in size to a quarter.
+- **Instant Alerts**: A simple press of the button sends an alert over Wi-Fi to the CareConnect app, allowing designated caregivers to receive real-time notifications.
+- **Cost-Effective**: By utilizing Wi-Fi connectivity, CareConnect eliminates the need for expensive cellular networks or SIM cards, making it a one-time investment without recurring costs.
+- **Rechargeable and Efficient**: Powered by a small, rechargeable battery and the Adafruit QT Py ESP32-S3 WiFi Dev Board, CareConnect is built to last with efficient power management and easy recharging via USB-C.
+- **Customizable and Open-Source**: This repository contains all the source code and schematics needed to build, modify, and improve CareConnect for your own needs.
+
+## Benefits Over Traditional Systems
+
+- **No Recurring Costs**: Unlike systems like LifeAlert, which charge monthly fees, CareConnect provides a subscription-free experience.
+- **Full Control**: CareConnect is open-source, giving users the freedom to modify and customize the device and software to fit their specific needs.
+- **Simplified Connectivity**: By using existing Wi-Fi networks, it bypasses the need for cellular connectivity, reducing complexity and potential outages.
+
+## Components
+
+To build CareConnect, you'll need the following components:
+- **Adafruit QT Py ESP32-S3 WiFi Dev Board** - [Link](https://www.adafruit.com/product/5540)
+- **Adafruit Ultra Slim Lithium Polymer Battery - 150mAh** or equivalent - [Link](https://www.adafruit.com/product/1317)
+- **Adafruit Massive Arcade Button (28mm)** or equivalent - [Link](https://www.adafruit.com/product/1185)
+- **3D Printed Enclosure** - Design files will eventually be available in this repo.
+
+## How It Works
+
+1. **Button Press**: When the button is pressed, the ESP32-S3 microcontroller wakes up and connects to a pre-configured Wi-Fi network.
+2. **Alert Sent**: The device sends a notification to the CareConnect app (via MQTT or HTTP) notifying caregivers of the event.
+3. **Real-Time Notification**: The caregiver's device receives the alert, allowing them to take appropriate action.
+
+## Installation
+
+1. Clone this repository.
    ```bash
-   npm install
+   git clone https://github.com/yourusername/careconnect.git
    ```
+2. Set up your development environment with the **Arduino IDE** or **PlatformIO**.
+3. Install necessary libraries (Wi-Fi, MQTT, etc.) as listed in `libraries.txt`.
+4. Upload the firmware to the Adafruit QT Py ESP32-S3 WiFi Dev Board.
+5. Customize the Wi-Fi credentials and notification endpoints (e.g., MQTT broker or webhook URL) in the firmware.
 
-2. Start the app
+## Usage
 
-   ```bash
-    npx expo start
-   ```
+- **Wearable Design**: Once built, the device can be worn around the neck and charged using a standard USB-C cable.
+- **Recharging**: The rechargeable battery can last several days on a single charge with deep sleep modes enabled, ensuring the device is always ready for emergencies.
 
-In the output, you'll find options to open the app in a
+## Future Enhancements
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **GPS Integration**: Add location tracking for even more detailed alerts.
+- **Fall Detection**: Incorporate motion sensors to automatically detect falls and trigger alerts.
+- **Mobile App Development**: Enhance the companion app to include more features, such as location services, health monitoring, or voice alerts.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## License
 
-## Get a fresh project
+This project is open-source and licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**CareConnect** – A smarter, more affordable approach to staying safe, with help just a button press away.
